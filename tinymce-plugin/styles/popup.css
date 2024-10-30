@@ -1,0 +1,23 @@
+#options {
+    margin: 10px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+.response-container {
+    height: 25px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+#wizard-finish {
+    display: none;
+}

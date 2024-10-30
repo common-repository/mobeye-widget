@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/popup.css"/>
+</head>
+<body>
+<form id="new-mobeye-widget" style="display: none;">
+	<h3>
+		Create a new widget
+	</h3>
+	<label>
+		Email :
+	</label>
+	<div>
+		<input type="email" required name="mobeye-widget-new-email"  style="height: 16px;"/>
+    </div>
+    <div id="youtube-link-options">
+		<label>Link on youtube video - as default placeholder:</label>
+		<div>
+			<input type="url" required name="youtube-link" style="height: 16px; width: 280px;"/>
+		</div>
+    </div>
+	<div style="height: 25px" id="mobeye-widget-create-response"></div>
+	<div>
+		<button type="submit" id="btn-mobeye-widget-new-save" style="float: right">Save</button>
+	</div>
+</form>
+<form id="options" style="display: none">
+    <label for="widget-id">Widget ID</label>
+    <input required pattern="\d+" id="widget-id" type="number" ><br/>
+
+    <label for="width">Width</label>
+    <input required pattern="\d+" id="width" type="number" value="600"><br/>
+
+    <label for="height">Height</label>
+    <input required pattern="\d+" id="height" type="number" value="400"><br/>
+
+    <label for="show-small-videos">Show small videos</label>
+    <input id="show-small-videos" type="checkbox" data-parameter-name="showSmallVideos"><br/>
+
+    <label for="show-chat">Show chat</label>
+    <input id="show-chat" type="checkbox" data-parameter-name="showChat"><br/>
+
+    <label for="show-featured-product">Show featured product</label>
+    <input id="show-featured-product" checked type="checkbox" data-parameter-name="showFeaturedProducts"><br/>
+
+    <label for="show-social-posts">Show social posts</label>
+    <input id="show-social-posts" checked type="checkbox" data-parameter-name="showSocialPosts"><br/>
+
+    <label for="show-big-video">Show big video</label>
+    <input id="show-big-video" checked type="checkbox" data-parameter-name="showBigVideo"><br/>
+
+    <label for="show-share-block">Show share block</label>
+    <input id="show-share-block" checked type="checkbox" data-parameter-name="showShareBlock"><br/>
+	
+	<label for="show-auth-block">Show auth button</label>
+    <input id="show-auth-block" checked type="checkbox" data-parameter-name="allowAuthButton"><br/>
+	
+	<label for="height">Button text</label>
+    <input id="loginButtonText" type="text" value="Login"><br/>
+	
+	<button type="button" class="btn-select-mode-back">Back</button>
+    <button type="submit" id="save">Update</button>
+</form>
+<div id="wizard-finish">
+    <div>
+        Your widget was created successfully!
+        Registration detail and password was sent to your e-mail.
+        <a target="_blank" href="http://mobeyevision.com">Please visit our site</a>
+    </div>
+    <a target="_blank" href="http://admin.mobeye.com">Setup yor widget in the MobEye BO</a>
+</div>
+
+<script src="scripts/tiny_mce_popup.js" ></script>
+<script src="scripts/jquery-1.10.2.min.js"></script>
+<script src="scripts/popup.js"></script>
+</body>
+</html>
